@@ -2,3 +2,4 @@
 **/__pycashe__/
 .env
 .cache
+.idea
