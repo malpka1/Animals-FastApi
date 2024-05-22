@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %} Add a New Animal {% endblock %}
+
+{% block content %}
+    <h1>Add a New Animal</h1>
+    <form action="/sync_add" method="post">
+        <label for="name">Name</label>
+        <br>
+        <input type="text" name="name" placeholder="Animal name" required>
+        <br>
+        <label for="description">Description</label>
+        <br>
+        <textarea name="description" placeholder="Animal description" rows="4" cols="50" required></textarea>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}
